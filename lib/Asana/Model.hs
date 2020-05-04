@@ -9129,7 +9129,7 @@ data TaskResponse = TaskResponse
   , taskResponseCreatedAt :: !(Maybe DateTime) -- ^ "created_at" - The time at which this resource was created.
   , taskResponseDependencies :: !(Maybe [AsanaResource]) -- ^ "dependencies" - [Opt In](#input-output-options). Array of resources referencing tasks that this task depends on. The objects contain only the gid of the dependency.
   , taskResponseDependents :: !(Maybe [AsanaResource]) -- ^ "dependents" - [Opt In](#input-output-options). Array of resources referencing tasks that depend on this task. The objects contain only the ID of the dependent.
-  , taskResponseDueAt :: !(Maybe Date) -- ^ "due_at" - Date and time on which this task is due, or null if the task has no due time. This takes a UTC timestamp and should not be used together with &#x60;due_on&#x60;.
+  , taskResponseDueAt :: !(Maybe DateTime) -- ^ "due_at" - Date and time on which this task is due, or null if the task has no due time. This takes a UTC timestamp and should not be used together with &#x60;due_on&#x60;.
   , taskResponseDueOn :: !(Maybe Date) -- ^ "due_on" - Date on which this task is due, or null if the task has no due date.  This takes a date with &#x60;YYYY-MM-DD&#x60; format and should not be used together with due_at.
   , taskResponseExternal :: !(Maybe TaskBaseAllOfExternal) -- ^ "external"
   , taskResponseHtmlNotes :: !(Maybe Text) -- ^ "html_notes" - [Opt In](#input-output-options). The notes of the text with formatting as HTML.

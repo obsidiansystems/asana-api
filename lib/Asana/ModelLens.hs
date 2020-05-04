@@ -4842,7 +4842,7 @@ taskResponseDependentsL f TaskResponse{..} = (\taskResponseDependents -> TaskRes
 {-# INLINE taskResponseDependentsL #-}
 
 -- | 'taskResponseDueAt' Lens
-taskResponseDueAtL :: Lens_' TaskResponse (Maybe Date)
+taskResponseDueAtL :: Lens_' TaskResponse (Maybe DateTime)
 taskResponseDueAtL f TaskResponse{..} = (\taskResponseDueAt -> TaskResponse { taskResponseDueAt, ..} ) <$> f taskResponseDueAt
 {-# INLINE taskResponseDueAtL #-}
 
